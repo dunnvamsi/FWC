@@ -2,10 +2,10 @@ import numpy as np
 
 # Creating two vectors
 # We have inserted elements of int type
-arr1 = [3, 2, 2]
-arr2 = [1, 2, -2]
-arr3 = [0.083,0.083,0.083]
-arr4 = [8,-8,-4]
+arr1 = np.array([3, 2, 2])
+arr2 = np.array([1, 2, -2])
+arr3 = np.array([0.083,0.083,0.083])
+arr4 = np.array([8,-8,-4])
 
 # Display the vectors
 print("Vector 1...\n", arr1)
