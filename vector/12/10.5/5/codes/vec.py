@@ -1,9 +1,11 @@
 import numpy as np
-
-# Define the vector
-x = np.array([1, 1, 1])
-
-# Find the magnitude of the vector
-c1 = (np.linalg.norm(x))
-X=1/(c1**x)
+import sympy as sym
+x=sym.Symbol('x')
+X=np.array([x,x,x])
 print(X)
+p=X@(X.T)-1
+print("{} =0".format(p))
+coeff = [3, 0,-1]
+r=np.roots(coeff)
+print("The value of x is : ")
+print(r)
