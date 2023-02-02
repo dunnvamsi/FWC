@@ -21,20 +21,30 @@ def line_dir_pt(m,P,k1,k2):
     x_AB[:,i]= temp1.T
   return x_AB       
 
+def line_gen(A,B):
+   len =10
+   dim = A.shape[0]
+   x_AB = np.zeros((dim,len))
+   lam_1 = np.linspace(0,1,len)
+   for i in range(len):
+     temp1 = A + lam_1[i]*(B-A)
+     x_AB[:,i]= temp1.T
+   return x_AB
 
 #Input parameters
 P=  np.array(([-1,2]))
 
 
 #Direction vector
-m=np.array(([1/2]))                                                              
+m=np.array(([-1,1/2]))                                                              
 z=np.array(([0,1],[-1,0]))                           
-#n=z@m                                     
+n=z@m
+                                     
 
 ##Generating the line 
 k1=-8
 k2=3
-x_mP = line_dir_pt(m,P,k1,k2)
+x_mP = line_dir_pt(n,P,k1,k2)
 
 
 #Plotting all lines
