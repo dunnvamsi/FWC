@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[journel,12pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[none]{hyphenat}
 \usepackage{graphicx}
@@ -35,45 +35,44 @@
 
 \begin{document}
 \begin{center}
-\title{\textbf{LINE}}
+\title{\textbf{Equation of Line}}
 \date{\vspace{-5ex}} %Not to print date automatically
 \maketitle
 \end{center}
 \section{11$^{th}$ Maths - Chapter 10}
 \textbf{This is Problem-15 from Exercise 10.3}
 \begin{enumerate}
-\item The perpendicular from the origin to the line y=mx+c meets it at the point (-1,2) find value of $\vec{m}\text{ and }\vec{c}$.
+\item The perpendicular from the origin to the line y=mx+c meets it at the point (-1,2) find value of $\vec{m}\text{ and }c$.
 \end{enumerate}
-\section{SOLUTION}
-Given line equation and points are
+Solution:
+\\
+The line equation and points are
 \begin{align}
-\vec{y}&=\vec{m}\vec{x}+\vec{c}\\
-\vec{p}&=\myvec{-1\\2}
+\vec{y}&=\vec{m}\vec{x}+c\\
+\vec{p}&=\myvec{-1\\2}\\
+\vec{o}&=\myvec{0\\0}\\
+\vec{n}&=\myvec{m\\-1}
 \end{align}
+The equation of line is
 \begin{align}
-\vec{n}&=\myvec{m\\-1}\\
-\vec{n}^{\top}\vec{x}&=\vec{c}\\
-\myvec{m&-1}\vec{x}&=\vec{c}\\
-\vec{m}\vec{x}-\vec{y}&=\vec{c}\\
+\vec{n}^{\top}\vec{x}&=c\\
+\myvec{m&-1}\vec{x}&=c\\
 \vec{m}&=\myvec{-1\\-m}
 \end{align}
-The directional vector is 
+The directional vector $\vec{OP}$ is 
 \begin{align}
 \myvec{\vec{o}-\vec{p}}^{\top}\vec{m}&=0\\
 \myvec{-1&2}\myvec{-1\\-m}&=0\\
-1-2\vec{m}&=0\\
 \vec{m}&=\frac{1}{2}
 \end{align}
-The value of c is
+From the line equation we find $c$ value is
 \begin{align}
-\vec{n}^{\top}x&=\vec{c}\\
-\myvec{\frac{1}{2}\\-1}\myvec{-1\\2}&=\vec{c}\\
-\myvec{\frac{-1}{2}&-2}&=\vec{c}\\
-\vec{c}&=\frac{-1-4}{2}\\
-\vec{c}&=\frac{-5}{2}
+\myvec{\frac{1}{2}\\-1}\myvec{-1\\2}&=c\\
+\myvec{\frac{-1}{2}&-2}&=c\\
+c&=\frac{-1-4}{2}\\
+c&=\frac{-5}{2}
 \end{align}
-\section{FIGURE}
-\begin{figure}[h!]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=\columnwidth]{fig.png}
 \caption{}
