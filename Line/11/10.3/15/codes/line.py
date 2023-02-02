@@ -33,22 +33,23 @@ def line_gen(A,B):
 
 #Input parameters
 P=  np.array(([-1,2]))
-
+O=np.array(([0,0]))
 
 #Direction vector
-m=np.array(([-1,1/2]))                                                              
+m=np.array(([1,-2]))                                                              
 z=np.array(([0,1],[-1,0]))                           
-n=z@m
+n=m@z
                                      
 
 ##Generating the line 
-k1=-8
-k2=3
+k1=-1
+k2=1
 x_mP = line_dir_pt(n,P,k1,k2)
-
+x_AB = line_gen(O,P)
 
 #Plotting all lines
 plt.plot(x_mP[0,:],x_mP[1,:],label='Line equation')
+plt.plot(x_AB[0,:],x_AB[1,:],label='$AB$')
 
 #Labeling the coordinates
 tri_coords = np.vstack((P,)).T
