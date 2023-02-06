@@ -1,4 +1,3 @@
-#Python libraries for math and graphics
 import numpy as np
 import mpmath as mp
 import math as ma
@@ -42,14 +41,16 @@ n=m@z
                                      
 
 ##Generating the line 
-k1=-1
-k2=1
-x_mP = line_dir_pt(n,P,k1,k2)
+
 x_AB = line_gen(O,P)
+X=np.linspace(-3,3,100)
+Y=(X-5)/2
+
 
 #Plotting all lines
-plt.plot(x_mP[0,:],x_mP[1,:],label='Line equation')
+
 plt.plot(x_AB[0,:],x_AB[1,:],label='$AB$')
+plt.plot(X,Y);
 
 #Labeling the coordinates
 tri_coords = np.vstack((P,)).T
