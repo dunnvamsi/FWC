@@ -34,13 +34,6 @@ def line_gen(A,B):
 P=  np.array(([-1,2]))
 O=np.array(([0,0]))
 
-#Direction vector
-m=np.array(([1,-2]))                                                              
-z=np.array(([0,1],[-1,0]))                           
-n=m@z
-                                     
-
-##Generating the line 
 
 x_AB = line_gen(O,P)
 X=np.linspace(-3,3,100)
