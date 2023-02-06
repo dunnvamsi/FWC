@@ -44,7 +44,7 @@ n=m@z
 
 x_AB = line_gen(O,P)
 X=np.linspace(-3,3,100)
-Y=(X-5)/2
+Y=(X+5)/2
 
 
 #Plotting all lines
